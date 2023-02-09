@@ -20,7 +20,7 @@
     ],
     "headers": [
         {
-            "source": "/api/(.*)",
+            "source": "/mern-portal.vercel.app/api/(.*)",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
