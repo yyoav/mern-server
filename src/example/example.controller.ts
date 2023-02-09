@@ -18,4 +18,16 @@ export class ExampleController {
       throw new InternalServerErrorException(`Error: ${error.message}`);
     }
   }
+
+  @Get('bye')
+  @HttpCode(200)
+
+  async getBye(): Promise<string> {
+    try {
+      return await this.exampleService.getBye();
+    } catch (err) {
+      const error = err as Error;
+      throw new InternalServerErrorException(`Error: ${error.message}`);
+    }
+  }
 }

@@ -7,4 +7,8 @@ export class ExampleService {
   async getHello(){
     return 'Hello World';
   }
+
+  async getBye(){
+    return 'Bye';
+  }
 }
